@@ -26,69 +26,207 @@
   <body class="font-main-font">
     <!-- navigation bar -->
     <header
-      class="absolute inset-0 w-full py-9 text-white text-xl font-bold h-fit"
+      class="absolute z-10 inset-0 w-full py-9 text-white text-base xl:text-xl font-bold h-fit"
     >
       <nav>
-        <div class="container flex justify-between">
-          <div class="logo">
+        <div class="container flex justify-between sm:w-11/12 lg:w-full">
+          <div class="logo w-40 xl:w-auto">
             <img src="public/images/logo.png" alt="logo" />
           </div>
-          <ul class="capitalize flex items-center gap-10">
+          <ul class="hidden lg:flex items-center gap-6 xl:gap-10">
             <li><a href="#">why you'll love us</a></li>
             <li><a href="#">features</a></li>
             <li><a href="#">the science</a></li>
             <li><a href="#">why we're better</a></li>
             <li><a href="#">testimonials</a></li>
           </ul>
+          <!-- mobile menu button -->
+          <img
+            src="public/images/icon-menu.svg"
+            alt="mobile menu icon"
+            class="w-5 lg:hidden"
+          />
         </div>
       </nav>
     </header>
     <!-- hero -->
     <section
-      class="bg-[url('../images/hero-banner.png')] bg-cover bg-center py-44 relative"
+      class="bg-[url('../images/hero-banner-cropped.png')] bg-cover bg-center pt-44 pb-44 -mb-11 relative"
     >
-      <div class="container grid grid-cols-[2fr_1fr] w-[90%]">
-        <!-- text container -->
-        <div class="text-white">
-          <h1 class="capitalize font-heading-font font-bold text-7xl mb-4">
-            study faster <br />
-            <span class="text-yellow-color">remember long</span>
-          </h1>
-          <p class="text-2xl mb-14">
-            Law School Boost makes studying for law school and the Bar easier
-            using our science-backed, A.I.-driven, adaptive flashcards with
-            integrated hypos, plain English legal translations, and memorable
-            illustrations.
-            <span class="text-yellow-color">Start now for FREE!</span>
-          </p>
-          <div class="flex gap-5">
-            <a href="#">
-              <img src="public/images/app-store.svg" alt="app store download" />
-            </a>
-            <a href="#">
+      <div class="container">
+        <div class="grid grid-cols-[2fr_1fr]">
+          <!-- text container -->
+          <div class="text-white pl-24">
+            <h1 class="capitalize font-heading-font font-bold text-7xl mb-4">
+              study faster <br />
+              <span class="text-yellow-color">remember long</span>
+            </h1>
+            <p class="text-2xl mb-14">
+              Law School Boost makes studying for law school and the Bar easier
+              using our science-backed, A.I.-driven, adaptive flashcards with
+              integrated hypos, plain English legal translations, and memorable
+              illustrations.
+              <span class="text-yellow-color">Start now for FREE!</span>
+            </p>
+            <!-- download app buttons container -->
+            <div class="flex gap-5 relative left-20">
+              <a href="#">
+                <img
+                  src="public/images/app-store.svg"
+                  alt="app store download"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="public/images/play-store.svg"
+                  alt="play store download"
+                />
+              </a>
+              <!-- middle missle -->
               <img
-                src="public/images/play-store.svg"
-                alt="play store download"
+                src="public/images/hero-missle.png"
+                alt="decorative missle"
+                class="absolute right-0 translate-x-10 translate-y-[32%] bottom-0"
               />
-            </a>
+            </div>
           </div>
-        </div>
-        <!-- middle missle -->
-        <img
-          src="public/images/hero-missle.png"
-          alt="decorative missle"
-          class="absolute left-1/2 -translate-x-1/2 bottom-0"
-        />
-        <!-- img container -->
-        <div>
-          <img
-            src="public/images/hero-phone.svg"
-            alt="decorative hero banner phone"
-            class="object-cover"
-          />
+
+          <!-- phone img container -->
+          <div class="relative overflow-hidden">
+            <img
+              src="public/images/hero-phone.svg"
+              alt="decorative hero banner phone"
+              class="absolute"
+            />
+          </div>
         </div>
       </div>
     </section>
+    <!-- statistics -->
+    <section class="relative">
+      <div class="container">
+        <!-- flex container -->
+        <div
+          class="flex justify-between w-[90%] bg-navy-color rounded-2xl mx-auto py-7 px-14 flex-wrap gap-y-20 items-center"
+        >
+          <!-- box -->
+          <div class="flex flex-col justify-between basis-40">
+            <!-- icon -->
+            <div class="mb-6">
+              <img
+                src="public/images/stats-students.png"
+                alt="law students statistics icon"
+                class="mx-auto"
+              />
+            </div>
+            <!-- heading & text -->
+            <div class="text-center text-white capitalize text-xl">
+              <span class="text-yellow-color block mb-3 text-3xl font-bold">
+                4,000+
+              </span>
+              law students
+            </div>
+          </div>
+
+          <!-- box -->
+          <div class="flex flex-col justify-between basis-40">
+            <!-- icon -->
+            <div class="mb-6">
+              <img
+                src="public/images/stats-law-schools.png"
+                alt="law schools statistics icon"
+                class="mx-auto"
+              />
+            </div>
+            <!-- heading & text -->
+            <div class="text-center text-white capitalize text-xl">
+              <span class="text-yellow-color block mb-3 text-3xl font-bold">
+                200+
+              </span>
+              law shools
+            </div>
+          </div>
+
+          <!-- box -->
+          <div class="flex flex-col justify-between basis-40">
+            <!-- icon -->
+            <div class="mb-6">
+              <img
+                src="public/images/stats-core-topics.png"
+                alt="core topics statistics icon"
+                class="mx-auto"
+              />
+            </div>
+            <!-- heading & text -->
+            <div class="text-center text-white capitalize text-xl">
+              <span class="text-yellow-color block mb-3 text-3xl font-bold">
+                15
+              </span>
+              core topics
+            </div>
+          </div>
+
+          <!-- box -->
+          <div class="flex flex-col justify-between basis-40">
+            <!-- icon -->
+            <div class="mb-6">
+              <img
+                src="public/images/stats-simpified-rules.png"
+                alt="simplified rules statistics icon"
+                class="mx-auto"
+              />
+            </div>
+            <!-- heading & text -->
+            <div class="text-center text-white capitalize text-xl">
+              <span class="text-yellow-color block mb-3 text-3xl font-bold">
+                1,600+
+              </span>
+              simplified rules
+            </div>
+          </div>
+
+          <!-- box -->
+          <div class="flex flex-col justify-between basis-40">
+            <!-- icon -->
+            <div class="mb-6">
+              <img
+                src="public/images/stats-concise-hypes.png"
+                alt="concise hypos statistics icon"
+                class="mx-auto"
+              />
+            </div>
+            <!-- heading & text -->
+            <div class="text-center text-white capitalize text-xl">
+              <span class="text-yellow-color block mb-3 text-3xl font-bold">
+                4,000+
+              </span>
+              concise hypos
+            </div>
+          </div>
+
+          <!-- box -->
+          <div class="flex flex-col justify-between basis-40">
+            <!-- icon -->
+            <div class="mb-6">
+              <img
+                src="public/images/stats-star-rating.png"
+                alt="star rating statistics icon"
+                class="mx-auto"
+              />
+            </div>
+            <!-- heading & text -->
+            <div class="text-center text-white capitalize text-xl">
+              <span class="text-yellow-color block mb-3 text-3xl font-bold">
+                4.8
+              </span>
+              star rating
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- why you'll love us -->
+    <section class="pt-16"></section>
   </body>
 
   <script src="public/js/main-script.js"></script>

@@ -53,12 +53,12 @@
     </header>
     <!-- hero -->
     <section
-      class="bg-[url('../images/hero-banner-cropped.png')] bg-cover bg-center pt-44 pb-28 xl:pb-44 -mb-[29px] xl:-mb-11 relative"
+      class="bg-[url('../images/hero-banner-cropped.png')] bg-cover bg-center pt-44 pb-48 lg:pb-28 xl:pb-44 mb-0 lg:-mb-[29px] xl:-mb-11 relative"
     >
       <div class="container">
-        <div class="grid grid-cols-[2fr_1fr]">
+        <div class="lg:grid grid-cols-[2fr_1fr]">
           <!-- text container -->
-          <div class="text-white pl-24">
+          <div class="text-white text-center lg:text-start lg:pl-24">
             <h1
               class="capitalize font-heading-font font-bold text-5xl xl:text-7xl mb-4"
             >
@@ -73,7 +73,9 @@
               <span class="text-yellow-color">Start now for FREE!</span>
             </p>
             <!-- download app buttons container -->
-            <div class="flex gap-5 relative left-20 w-fit xl:w-auto">
+            <div
+              class="flex gap-5 relative lg:left-20 w-fit mx-auto lg:mx-0 xl:w-auto"
+            >
               <a href="#" class="inline-block w-36 xl:w-auto">
                 <img
                   src="public/images/app-store.svg"
@@ -91,13 +93,13 @@
               <img
                 src="public/images/hero-missle.png"
                 alt="decorative missle"
-                class="absolute right-0 translate-x-3/4 xl:translate-x-10 translate-y-[32%] bottom-0"
+                class="absolute lg:right-0 lg:translate-x-3/4 xl:translate-x-10 lg:translate-y-[32%] bottom-0 -right-1/2 -translate-x-1/2 translate-y-3/4"
               />
             </div>
           </div>
 
           <!-- phone img container -->
-          <div class="relative overflow-hidden">
+          <div class="relative overflow-hidden hidden lg:block">
             <img
               src="public/images/hero-phone.svg"
               alt="decorative hero banner phone"

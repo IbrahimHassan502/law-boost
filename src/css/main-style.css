@@ -4,6 +4,6 @@
 
 @layer base {
   .container {
-    @apply sm:px-4 mx-auto max-w-none;
+    @apply px-4 mx-auto max-w-none;
   }
 }

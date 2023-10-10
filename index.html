@@ -26,14 +26,16 @@
   <body class="font-main-font">
     <!-- navigation bar -->
     <header
-      class="absolute z-10 inset-0 w-full py-9 text-white text-base xl:text-xl font-bold h-fit"
+      class="absolute z-10 inset-0 w-full py-9 text-white text-3xl lg:text-base xl:text-xl font-bold h-fit"
     >
       <nav>
         <div class="container flex justify-between sm:w-11/12 lg:w-full">
           <div class="logo w-40 xl:w-auto">
             <img src="public/images/logo.png" alt="logo" />
           </div>
-          <ul class="hidden lg:flex items-center gap-6 xl:gap-10">
+          <ul
+            class="nav-menu flex flex-col lg:flex-row items-center gap-20 lg:gap-6 xl:gap-10 absolute lg:relative w-full lg:w-auto h-screen lg:h-auto inset-0 bg-navy-color lg:bg-transparent -z-10 lg:z-0 pt-32 lg:pt-0 justify-center -translate-y-full lg:translate-y-0 duration-700 ease-out opacity-0 lg:opacity-100"
+          >
             <li><a href="#">why you'll love us</a></li>
             <li><a href="#">features</a></li>
             <li><a href="#">the science</a></li>
@@ -44,24 +46,26 @@
           <img
             src="public/images/icon-menu.svg"
             alt="mobile menu icon"
-            class="w-5 lg:hidden"
+            class="mobile-menu-button w-5 lg:hidden cursor-pointer"
           />
         </div>
       </nav>
     </header>
     <!-- hero -->
     <section
-      class="bg-[url('../images/hero-banner-cropped.png')] bg-cover bg-center pt-44 pb-44 -mb-11 relative"
+      class="bg-[url('../images/hero-banner-cropped.png')] bg-cover bg-center pt-44 pb-28 xl:pb-44 -mb-[29px] xl:-mb-11 relative"
     >
       <div class="container">
         <div class="grid grid-cols-[2fr_1fr]">
           <!-- text container -->
           <div class="text-white pl-24">
-            <h1 class="capitalize font-heading-font font-bold text-7xl mb-4">
+            <h1
+              class="capitalize font-heading-font font-bold text-5xl xl:text-7xl mb-4"
+            >
               study faster <br />
               <span class="text-yellow-color">remember long</span>
             </h1>
-            <p class="text-2xl mb-14">
+            <p class="text-lg xl:text-2xl mb-9 xl:mb-14">
               Law School Boost makes studying for law school and the Bar easier
               using our science-backed, A.I.-driven, adaptive flashcards with
               integrated hypos, plain English legal translations, and memorable
@@ -69,14 +73,15 @@
               <span class="text-yellow-color">Start now for FREE!</span>
             </p>
             <!-- download app buttons container -->
-            <div class="flex gap-5 relative left-20">
-              <a href="#">
+            <div class="flex gap-5 relative left-20 w-fit xl:w-auto">
+              <a href="#" class="inline-block w-36 xl:w-auto">
                 <img
                   src="public/images/app-store.svg"
                   alt="app store download"
                 />
               </a>
-              <a href="#">
+
+              <a href="#" class="inline-block w-36 xl:w-auto">
                 <img
                   src="public/images/play-store.svg"
                   alt="play store download"
@@ -86,7 +91,7 @@
               <img
                 src="public/images/hero-missle.png"
                 alt="decorative missle"
-                class="absolute right-0 translate-x-10 translate-y-[32%] bottom-0"
+                class="absolute right-0 translate-x-3/4 xl:translate-x-10 translate-y-[32%] bottom-0"
               />
             </div>
           </div>

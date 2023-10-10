@@ -11,6 +11,9 @@ module.exports = {
         "yellow-color": "#fcec52",
         "navy-color": "#2d3b77",
       },
+      gridTemplateColumns: {
+        "reponsive-6": "repeat(auto-fit, minmax(200px, 1fr))",
+      },
     },
   },
   plugins: [],

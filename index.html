@@ -109,6 +109,7 @@
         </div>
       </div>
     </section>
+
     <!-- statistics -->
     <section class="relative">
       <div class="container">
@@ -233,7 +234,104 @@
       </div>
     </section>
     <!-- why you'll love us -->
-    <section class="pt-16"></section>
+    <section class="pt-16 overflow-hidden">
+      <div class="container">
+        <!-- first grid container -->
+        <div class="xl:grid grid-cols-2 justify-items-center">
+          <!-- text container -->
+          <div class="flex flex-col items-center">
+            <h2
+              class="capitalize text-navy-color font-heading-font font-bold text-5xl mb-7"
+            >
+              why you'll love us
+            </h2>
+            <!-- pyramid image showing from lg screens down to smallest mobile -->
+            <div class="xl:hidden my-20">
+              <img src="public/images/Pyramid.svg" alt="" />
+            </div>
+            <!-- paragraphs container with indent padding -->
+            <div class="text-2xl font-semibold flex flex-col gap-y-5 ps-10">
+              <p>
+                You already spend hours attending lectures, why would you spend
+                even more of your limited time sorting through piles of outlines
+                or seeking out that one bit of relevant information from some
+                long-winded video?
+              </p>
+              <p class="text-navy-color">
+                Law School Boost makes mastering the law simple and efficient by
+                acting as a seamless support layer between law school and your
+                exam studies.
+              </p>
+              <p>
+                Our app enables better concept-by-concept comprehension of
+                <span class="text-navy-color">core fundamentals</span> by
+                isolating each individual, commonly tested rule statement and
+                providing built-in layers of rule-specific learning aids. Oh,
+                and we wrap it all in an A.I. that adapts to your learning and
+                is <span class="text-navy-color">scientifically proven</span> to
+                increase longterm retention.
+              </p>
+            </div>
+          </div>
+          <!-- pyramid container -->
+          <div class="hidden xl:block">
+            <img
+              src="public/images/Pyramid.svg"
+              alt="pyramid representation of law school boost steps from fundamentals to landing a job"
+            />
+          </div>
+        </div>
+        <!-- second grid container -->
+        <div
+          class="grid grid-cols-2 lg:grid-cols-[2fr_1fr_2fr] lg:translate-y-[20%] xl:translate-y-[32.5%] mt-11 lg:-mt-4 xl:-mt-48 justify-items-center items-center lg:items-start gap-10"
+        >
+          <!-- first phone container -->
+          <div class="relative self-center flex justify-end">
+            <img
+              src="public/images/why-us-first-phone-cropped.png"
+              alt="phone screen showing a progress bar of the application with a quiz beneath it"
+              class="w-2/3 lg:w-auto"
+            />
+            <!-- hidden from lg and up -->
+            <img
+              src="public/images/why-us-second-phone-cropped.png"
+              alt="phone screen showing a dark theme of the application with colorful progress bars and pie charts of the completed courses"
+              class="absolute top-0 right-0 -translate-x-1/2 w-2/3 lg:hidden"
+            />
+          </div>
+          <!-- cta container -->
+          <div
+            class="lg:pt-28 text-base md:text-3xl text-center font-extrabold font-heading-font flex flex-col items-center"
+          >
+            <p class="text-navy-color mb-8 md:mb-16">
+              Join today <br />
+              and Boost your <br />
+              studying for FREE!
+            </p>
+            <div>
+              <a href="#" class="block mb-6 md:mb-11 w-3/4 md:w-full mx-auto">
+                <img
+                  src="public/images/app-store.svg"
+                  alt="app store downlaod link"
+                />
+              </a>
+              <a href="#" class="block w-3/4 md:w-full mx-auto">
+                <img
+                  src="public/images/play-store.svg"
+                  alt="play store download link"
+                />
+              </a>
+            </div>
+          </div>
+          <!-- second phone container -->
+          <img
+            src="public/images/why-us-second-phone.png"
+            alt="phone screen showing a dark theme of the application with colorful progress bars and pie charts of the completed courses"
+            class="hidden lg:inline-block"
+          />
+        </div>
+      </div>
+    </section>
   </body>
 
   <script src="public/js/main-script.js"></script>

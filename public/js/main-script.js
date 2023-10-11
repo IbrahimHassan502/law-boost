@@ -9,5 +9,14 @@ mobileMenuButton.addEventListener("click", () => {
 });
 // instution reivews owl carosuel
 $(document).ready(function () {
-  $(".owl-carousel").owlCarousel();
+  $(".owl-carousel").owlCarousel({
+    nav: true,
+    margin: 30,
+    center: true,
+    loop: true,
+    responsive: {
+      0: { items: 1 },
+      768: { items: 2 },
+    },
+  });
 });

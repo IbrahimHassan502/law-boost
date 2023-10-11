@@ -6,4 +6,15 @@
   .container {
     @apply px-4 mx-auto max-w-none;
   }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading-font font-extrabold capitalize;
+  }
+  h2 {
+    @apply text-5xl text-navy-color;
+  }
 }

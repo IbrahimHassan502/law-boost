@@ -20,6 +20,9 @@
     />
     <!-- gilory font -->
     <link href="https://fonts.cdnfonts.com/css/gilroy" rel="stylesheet" />
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="public/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="public/css/owl.theme.default.min.css" />
     <!-- main style -->
     <link rel="stylesheet" href="public/css/main-style.css" />
   </head>
@@ -233,24 +236,29 @@
         </div>
       </div>
     </section>
+
     <!-- why you'll love us -->
-    <section class="pt-16 overflow-hidden">
+    <section class="relative pt-16 overflow-hidden">
       <div class="container">
         <!-- first grid container -->
         <div class="xl:grid grid-cols-2 justify-items-center">
           <!-- text container -->
           <div class="flex flex-col items-center">
             <h2
-              class="capitalize text-navy-color font-heading-font font-bold text-5xl mb-7"
+              class="capitalize text-center sm:text-start text-navy-color font-heading-font font-bold text-5xl mb-7"
             >
               why you'll love us
             </h2>
             <!-- pyramid image showing from lg screens down to smallest mobile -->
-            <div class="xl:hidden my-20">
-              <img src="public/images/Pyramid.svg" alt="" />
+            <div class="xl:hidden w-4/5 mx-auto my-10 sm:my-20">
+              <img
+                src="public/images/Pyramid.svg"
+                alt="pyramid representation of law school boost steps from fundamentals to landing a job"
+                class="mx-auto"
+              />
             </div>
             <!-- paragraphs container with indent padding -->
-            <div class="text-2xl font-semibold flex flex-col gap-y-5 ps-10">
+            <div class="sm:text-2xl font-semibold flex flex-col gap-y-5 ps-10">
               <p>
                 You already spend hours attending lectures, why would you spend
                 even more of your limited time sorting through piles of outlines
@@ -283,10 +291,12 @@
         </div>
         <!-- second grid container -->
         <div
-          class="grid grid-cols-2 lg:grid-cols-[2fr_1fr_2fr] lg:translate-y-[20%] xl:translate-y-[32.5%] mt-11 lg:-mt-4 xl:-mt-48 justify-items-center items-center lg:items-start gap-10"
+          class="grid sm:grid-cols-[1fr_2fr] lg:grid-cols-[2fr_1fr_2fr] lg:translate-y-[20%] xl:translate-y-[32.5%] mt-11 lg:-mt-4 xl:-mt-48 justify-items-center items-center lg:items-start gap-x-10 gap-y-6"
         >
           <!-- first phone container -->
-          <div class="relative self-center flex justify-end">
+          <div
+            class="relative self-end lg:self-center flex justify-end w-2/3 sm:w-auto"
+          >
             <img
               src="public/images/why-us-first-phone-cropped.png"
               alt="phone screen showing a progress bar of the application with a quiz beneath it"
@@ -301,21 +311,21 @@
           </div>
           <!-- cta container -->
           <div
-            class="lg:pt-28 text-base md:text-3xl text-center font-extrabold font-heading-font flex flex-col items-center"
+            class="lg:pt-28 text-4xl sm:text-3xl text-center font-extrabold font-heading-font flex flex-col items-center pb-5 lg:pb-0"
           >
-            <p class="text-navy-color mb-8 md:mb-16">
+            <p class="text-navy-color mb-8 md:mb-12">
               Join today <br />
               and Boost your <br />
               studying for FREE!
             </p>
             <div>
-              <a href="#" class="block mb-6 md:mb-11 w-3/4 md:w-full mx-auto">
+              <a href="#" class="block mb-4 lg:mb-11 w-3/4 lg:w-full mx-auto">
                 <img
                   src="public/images/app-store.svg"
                   alt="app store downlaod link"
                 />
               </a>
-              <a href="#" class="block w-3/4 md:w-full mx-auto">
+              <a href="#" class="block w-3/4 lg:w-full mx-auto">
                 <img
                   src="public/images/play-store.svg"
                   alt="play store download link"
@@ -331,8 +341,205 @@
           />
         </div>
       </div>
+      <!-- decorative shadow -->
+      <div
+        class="shadow-[0_-3px_42px_25px_rgba(0,0,0,0.61)] absolute w-full h-px bottom-0 left-0"
+      ></div>
+    </section>
+
+    <!-- features -->
+    <section
+      class="bg-yellow-color pt-12 pb-36 lg:pb-16 shadow-[0_-3px_90px_25px_rgba(0,0,0,0.61)]"
+    >
+      <div class="container">
+        <h2 class="mb-20 md:mb-12 text-center sm:text-start">
+          features that define us
+        </h2>
+        <div
+          class="grid lg:grid-cols-2 gap-x-14 xl:gap-x-20 gap-y-16 w-11/12 mx-auto"
+        >
+          <!-- box 1 -->
+          <div
+            class="grid text-center sm:text-start sm:grid-cols-[1fr_4fr] gap-8"
+          >
+            <!-- img container -->
+            <div>
+              <img
+                src="public/images/features-1.png"
+                alt="mobile phone showing law school boost logo"
+                class="mx-auto"
+              />
+            </div>
+            <!-- text container -->
+            <div>
+              <h3 class="text-3xl xl:text-4xl mb-4">modernly mobile</h3>
+              <p class="xl:text-xl">
+                turn any moment into a study opportunity, whether between class,
+                in line at Disneyland, or a bathroom break. Study anywhere you
+                have your phone, which is probably most places.
+              </p>
+            </div>
+          </div>
+
+          <!-- box 2 -->
+          <div
+            class="grid text-center sm:text-start sm:grid-cols-[1fr_4fr] gap-8"
+          >
+            <!-- img container -->
+            <div>
+              <img
+                src="public/images/features-2.png"
+                alt="cartoonish rocket following several paths"
+                class="mx-auto"
+              />
+            </div>
+            <!-- text container -->
+            <div>
+              <h3 class="text-3xl xl:text-4xl mb-4">Hyperspace of Hypos</h3>
+              <p class="xl:text-xl">
+                Ditch your grandpa's E&E and enjoy our concise, concept-specific
+                built-in hypos that quickly demonstrate how legal concepts work
+                (and don't work) in real-world(ish) scenarios.
+              </p>
+            </div>
+          </div>
+
+          <!-- box 3 -->
+          <div
+            class="grid text-center sm:text-start sm:grid-cols-[1fr_4fr] gap-8"
+          >
+            <!-- img container -->
+            <div>
+              <img
+                src="public/images/features-3.png"
+                alt="tangled wires entering a cone from one end and getting out organized from the other end"
+                class="mx-auto"
+              />
+            </div>
+            <!-- text container -->
+            <div>
+              <h3 class="text-3xl xl:text-4xl mb-4">mastery > memorization</h3>
+              <p class="xl:text-xl">
+                Enjoy having every legal concept translated into simple, plain
+                English, layperson's terms. Because the goal is to learn the
+                law, not old-timey legalese.
+              </p>
+            </div>
+          </div>
+
+          <!-- box 4 -->
+          <div
+            class="grid text-center sm:text-start sm:grid-cols-[1fr_4fr] gap-8"
+          >
+            <!-- img container -->
+            <div>
+              <img
+                src="public/images/features-4.png"
+                alt="a hammer and a painting brush crossed"
+                class="mx-auto"
+              />
+            </div>
+            <!-- text container -->
+            <div>
+              <h3 class="text-3xl xl:text-4xl mb-4">
+                Visual Learners Rejoice!
+              </h3>
+              <p class="xl:text-xl">
+                We pair our flashcards with colorful, engaging illustrations,
+                flowcharts, and infographics. Our doodles help anchor legal
+                concepts into your memory by providing vivid points of
+                recollection.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ai -->
+    <section
+      class="bg-navy-color rounded-xl w-4/5 mx-auto text-white -translate-y-1/4 pt-6 pb-7 relative z-10"
+    >
+      <div class="container">
+        <!-- grid container -->
+        <div
+          class="grid justify-items-center md:grid-cols-[1fr_8fr] gap-x-9 gap-y-7 items-center"
+        >
+          <!-- image container -->
+          <div>
+            <img src="public/images/ai-robot.png" alt="cartoon ai robot" />
+          </div>
+          <!-- text container -->
+          <div class="text-center md:text-start">
+            <h2 class="text-white text-3xl mb-1">A.I.-Enhanced study engine</h2>
+            <p>
+              Our A.I. uses proven cognitive science and spaced repetition to
+              ✨automagically✨ adapt your study plan in real-time, enabling 80%
+              more long-term retention of information than traditional study
+              methods.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="public/images/ai-arrow.png"
+        alt="decorative arrow"
+        class="absolute -z-10 bottom-11 translate-y-full left-3 -translate-x-full"
+      />
+    </section>
+
+    <!-- it's science -->
+    <section class="pt-12">
+      <div class="container">
+        <h2 class="mb-14 text-center lg:text-start">
+          don't take our Word for it — it's science!
+        </h2>
+        <!-- graph with text -->
+        <div
+          class="grid lg:grid-cols-2 items-center gap-x-16 gap-y-10 w-11/12 mx-auto"
+        >
+          <!-- graph container -->
+          <div>
+            <img
+              src="public/images/graph.png"
+              alt="graph shwoing learning and review curve"
+            />
+          </div>
+          <!-- text container -->
+          <div class="capitalize text-lg font-semibold">
+            <p class="mb-2">
+              Spaced repetition has been proven to increase the rate of
+              learning, and increase bar exam passage rates. It works by
+              frequently testing new and difficult concepts, while older and
+              less difficult concepts are tested less to exploit the
+              psychological spacing effect.
+            </p>
+            <p>
+              Law School Boost will automagically optimize your study session
+              and focus your time on learning concepts you struggle with most
+              while ensuring that easier topics are not forgotten.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- institutino reviews -->
+    <section class="pt-20">
+      <div class="container">
+        <h2>what others are saying:</h2>
+
+        <div class="owl-carousel">
+          <div class="flex flex-col gap-16"></div>
+        </div>
+      </div>
     </section>
   </body>
 
+  <!-- jquery -->
+  <script src="public/js/jquery-3.7.1.min.js"></script>
+  <!-- owl carousel -->
+  <script src="public/js/owl.carousel.min.js"></script>
+  <!-- main script -->
   <script src="public/js/main-script.js"></script>
 </html>

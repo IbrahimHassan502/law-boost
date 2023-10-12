@@ -10,6 +10,8 @@ module.exports = {
       colors: {
         "yellow-color": "#fcec52",
         "navy-color": "#2d3b77",
+        "light-purple": "#b6bddc",
+        "dark-orange-color": "#bd7b39",
         "dark-grey-color": "#2d2f33",
       },
       gridTemplateColumns: {

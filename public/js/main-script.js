@@ -9,14 +9,45 @@ mobileMenuButton.addEventListener("click", () => {
 });
 // instution reivews owl carosuel
 $(document).ready(function () {
-  $(".owl-carousel").owlCarousel({
+  $(".instit-reviews").owlCarousel({
     nav: true,
+    // autoplay: true,
+    // autoplayTimeout: 2500,
     margin: 30,
     center: true,
     loop: true,
     responsive: {
       0: { items: 1 },
       768: { items: 2 },
+    },
+  });
+});
+
+//reivews owl carosuel
+$(document).ready(function () {
+  $(".reviews").owlCarousel({
+    nav: false,
+    // autoplay: true,
+    // autoplayTimeout: 2500,
+    margin: 30,
+    center: true,
+    loop: false,
+    responsive: {
+      0: { items: 1 },
+      768: { items: 3 },
+    },
+  });
+  $(".reviews-2").owlCarousel({
+    rtl: true,
+    nav: false,
+    // autoplay: true,
+    // autoplayTimeout: 2500,
+    margin: 30,
+    center: true,
+    loop: false,
+    responsive: {
+      0: { items: 1 },
+      768: { items: 3 },
     },
   });
 });

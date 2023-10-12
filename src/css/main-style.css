@@ -21,3 +21,14 @@
 .owl-carousel .owl-stage {
   @apply flex;
 }
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev {
+  @apply text-8xl text-navy-color font-extrabold;
+}
+.owl-carousel .owl-nav {
+  @apply flex justify-center gap-x-10;
+}
+
+.owl-carousel .owl-item img {
+  width: auto;
+}

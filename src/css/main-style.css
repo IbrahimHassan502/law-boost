@@ -29,6 +29,7 @@
   @apply flex justify-center gap-x-10;
 }
 
-.owl-carousel .owl-item img {
-  width: auto;
+.owl-carousel.reviews .owl-item img,
+.owl-carousel.reviews-2 .owl-item img {
+  @apply w-16;
 }

@@ -14,7 +14,8 @@ $(document).ready(function () {
     // autoplay: true,
     // autoplayTimeout: 2500,
     margin: 30,
-    center: true,
+    stagePadding: 120,
+    center: false,
     loop: true,
     responsive: {
       0: { items: 1 },
@@ -30,24 +31,41 @@ $(document).ready(function () {
     // autoplay: true,
     // autoplayTimeout: 2500,
     margin: 30,
-    center: true,
-    loop: false,
+    stagePadding: 60,
+    center: false,
+    loop: true,
     responsive: {
       0: { items: 1 },
-      768: { items: 3 },
+      768: { items: 2 },
     },
   });
   $(".reviews-2").owlCarousel({
-    rtl: true,
     nav: false,
     // autoplay: true,
     // autoplayTimeout: 2500,
     margin: 30,
-    center: true,
-    loop: false,
+    stagePadding: 60,
+    center: false,
+    loop: true,
     responsive: {
       0: { items: 1 },
-      768: { items: 3 },
+      768: { items: 2 },
     },
   });
+});
+// ========= faq functionality
+const faqContainer = document.querySelector(".faq-container");
+faqContainer.addEventListener("click", (e) => {
+  const faqBox = e.target.closest(".faq-box");
+  const answerBox = faqBox.querySelector(".answer-box");
+  const answerBoxHeight = answerBox.querySelector(".answer-box p").offsetHeight;
+
+  faqBox.classList.toggle("answer-showed");
+  answerBox.classList.toggle("opacity-0");
+  answerBox.classList.remove("h-0");
+  if (faqBox.classList.contains("answer-showed")) {
+    answerBox.style.height = `${answerBoxHeight}px`;
+  } else {
+    answerBox.style.height = `0`;
+  }
 });

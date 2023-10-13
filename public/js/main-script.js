@@ -11,15 +11,15 @@ mobileMenuButton.addEventListener("click", () => {
 $(document).ready(function () {
   $(".instit-reviews").owlCarousel({
     nav: true,
-    // autoplay: true,
-    // autoplayTimeout: 2500,
+    autoplay: true,
+    autoplayTimeout: 2500,
     margin: 30,
-    stagePadding: 120,
     center: false,
     loop: true,
     responsive: {
-      0: { items: 1 },
-      768: { items: 2 },
+      0: { items: 1, stagePadding: 0 },
+      768: { items: 1, stagePadding: 60 },
+      1024: { items: 2, stagePadding: 120 },
     },
   });
 });
@@ -28,28 +28,28 @@ $(document).ready(function () {
 $(document).ready(function () {
   $(".reviews").owlCarousel({
     nav: false,
-    // autoplay: true,
-    // autoplayTimeout: 2500,
+    autoplay: true,
+    autoplayTimeout: 2500,
     margin: 30,
-    stagePadding: 60,
     center: false,
     loop: true,
     responsive: {
-      0: { items: 1 },
-      768: { items: 2 },
+      0: { items: 1, stagePadding: 0 },
+      768: { items: 1, stagePadding: 60 },
+      1024: { items: 2, stagePadding: 60 },
     },
   });
   $(".reviews-2").owlCarousel({
     nav: false,
-    // autoplay: true,
-    // autoplayTimeout: 2500,
+    autoplay: true,
+    autoplayTimeout: 2500,
     margin: 30,
-    stagePadding: 60,
     center: false,
     loop: true,
     responsive: {
-      0: { items: 1 },
-      768: { items: 2 },
+      0: { items: 1, stagePadding: 0 },
+      768: { items: 1, stagePadding: 60 },
+      1024: { items: 2, stagePadding: 60 },
     },
   });
 });

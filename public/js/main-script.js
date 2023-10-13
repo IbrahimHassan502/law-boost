@@ -42,10 +42,11 @@ $(document).ready(function () {
   $(".reviews-2").owlCarousel({
     nav: false,
     autoplay: true,
-    autoplayTimeout: 2500,
+    autoplayTimeout: 2100,
     margin: 30,
     center: false,
     loop: true,
+    slideBy: -1,
     responsive: {
       0: { items: 1, stagePadding: 0 },
       768: { items: 1, stagePadding: 60 },

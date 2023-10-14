@@ -1064,6 +1064,10 @@ h2 {
   align-self: flex-end;
 }
 
+.justify-self-start {
+  justify-self: start;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -1498,6 +1502,10 @@ h2 {
     flex-direction: row;
   }
 
+  .sm\:items-center {
+    align-items: center;
+  }
+
   .sm\:px-14 {
     padding-left: 3.5rem;
     padding-right: 3.5rem;
@@ -1674,6 +1682,10 @@ h2 {
     align-self: center;
   }
 
+  .lg\:justify-self-start {
+    justify-self: start;
+  }
+
   .lg\:bg-transparent {
     background-color: transparent;
   }
@@ -1782,6 +1794,10 @@ h2 {
   .xl\:gap-x-9 {
     -moz-column-gap: 2.25rem;
          column-gap: 2.25rem;
+  }
+
+  .xl\:justify-self-start {
+    justify-self: start;
   }
 
   .xl\:text-2xl {

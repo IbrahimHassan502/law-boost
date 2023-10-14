@@ -622,6 +622,10 @@ h2 {
   inset: 0px;
 }
 
+.-bottom-4 {
+  bottom: -1rem;
+}
+
 .bottom-0 {
   bottom: 0px;
 }
@@ -660,6 +664,10 @@ h2 {
 
 .z-10 {
   z-index: 10;
+}
+
+.z-20 {
+  z-index: 20;
 }
 
 .mx-auto {
@@ -853,8 +861,16 @@ h2 {
   width: 15rem;
 }
 
+.w-\[106\%\] {
+  width: 106%;
+}
+
 .w-\[14\%\] {
   width: 14%;
+}
+
+.w-\[40\%\] {
+  width: 40%;
 }
 
 .w-\[90\%\] {
@@ -870,8 +886,16 @@ h2 {
   width: 100%;
 }
 
+.max-w-\[106\%\] {
+  max-width: 106%;
+}
+
 .max-w-lg {
   max-width: 32rem;
+}
+
+.flex-grow {
+  flex-grow: 1;
 }
 
 .basis-40 {
@@ -904,6 +928,11 @@ h2 {
 
 .translate-x-5 {
   --tw-translate-x: 1.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-\[40\%\] {
+  --tw-translate-y: 40%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -940,10 +969,6 @@ h2 {
 
 .grid-cols-\[2fr_1fr\] {
   grid-template-columns: 2fr 1fr;
-}
-
-.grid-rows-\[4fr_1fr\] {
-  grid-template-rows: 4fr 1fr;
 }
 
 .grid-rows-\[auto_1fr\] {
@@ -1064,10 +1089,6 @@ h2 {
   align-self: flex-end;
 }
 
-.justify-self-start {
-  justify-self: start;
-}
-
 .overflow-hidden {
   overflow: hidden;
 }
@@ -1109,6 +1130,11 @@ h2 {
   border-left-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.bg-\[\#36366e\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(54 54 110 / var(--tw-bg-opacity));
+}
+
 .bg-dark-grey-color {
   --tw-bg-opacity: 1;
   background-color: rgb(45 47 51 / var(--tw-bg-opacity));
@@ -1147,8 +1173,8 @@ h2 {
   background-image: url('../images/footer-bg.svg');
 }
 
-.bg-\[url\(\'\.\.\/images\/hero-banner\.svg\'\)\] {
-  background-image: url('../images/hero-banner.svg');
+.bg-\[url\(\'\.\.\/images\/sky-no-clouds\.svg\'\)\] {
+  background-image: url('../images/sky-no-clouds.svg');
 }
 
 .bg-\[url\(\'\.\.\/images\/we-are-better-bg\.svg\'\)\] {
@@ -1444,6 +1470,14 @@ h2 {
   width: 4rem;
 }
 
+.owl-carousel.reviews .owl-stage {
+  padding-right: 170px !important;
+}
+
+.owl-carousel.reviews-2 .owl-stage {
+  padding-left: 170px !important;
+}
+
 @media (min-width: 640px) {
   .sm\:bottom-11 {
     bottom: 2.75rem;
@@ -1500,10 +1534,6 @@ h2 {
 
   .sm\:flex-row {
     flex-direction: row;
-  }
-
-  .sm\:items-center {
-    align-items: center;
   }
 
   .sm\:px-14 {
@@ -1630,6 +1660,11 @@ h2 {
     width: 100%;
   }
 
+  .lg\:-translate-y-\[60\%\] {
+    --tw-translate-y: -60%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
   .lg\:translate-y-0 {
     --tw-translate-y: 0px;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1682,12 +1717,14 @@ h2 {
     align-self: center;
   }
 
-  .lg\:justify-self-start {
-    justify-self: start;
-  }
-
   .lg\:bg-transparent {
     background-color: transparent;
+  }
+
+  @media (min-width: 1024px) {
+    .lg\:lg\:pr-12 {
+      padding-right: 3rem;
+    }
   }
 
   .lg\:pb-0 {
@@ -1700,6 +1737,10 @@ h2 {
 
   .lg\:pb-72 {
     padding-bottom: 18rem;
+  }
+
+  .lg\:pl-12 {
+    padding-left: 3rem;
   }
 
   .lg\:pl-24 {
@@ -1765,8 +1806,18 @@ h2 {
     width: auto;
   }
 
+  .xl\:translate-y-0 {
+    --tw-translate-y: 0px;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
   .xl\:translate-y-\[32\.5\%\] {
     --tw-translate-y: 32.5%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .xl\:translate-y-\[40\%\] {
+    --tw-translate-y: 40%;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
@@ -1780,6 +1831,10 @@ h2 {
 
   .xl\:grid-cols-\[1fr_4fr_1fr\] {
     grid-template-columns: 1fr 4fr 1fr;
+  }
+
+  .xl\:gap-0 {
+    gap: 0px;
   }
 
   .xl\:gap-10 {

@@ -39,11 +39,17 @@
           <ul
             class="nav-menu flex flex-col lg:flex-row items-center justify-between lg:gap-6 xl:gap-10 absolute lg:relative w-full lg:w-auto h-screen lg:h-auto inset-0 bg-navy-color lg:bg-transparent -z-10 lg:z-0 pt-32 pb-20 lg:pb-0 lg:pt-0 -translate-y-full lg:translate-y-0 duration-700 ease-out opacity-0 lg:opacity-100"
           >
-            <li><a href="#why-us">why you'll love us</a></li>
-            <li><a href="#features">features</a></li>
-            <li><a href="#science">the science</a></li>
-            <li><a href="#we-better">why we're better</a></li>
-            <li><a href="#testimonials">testimonials</a></li>
+            <li>
+              <a href="#why-us" class="bg-[#36366e]">why you'll love us</a>
+            </li>
+            <li><a href="#features" class="bg-[#36366e]">features</a></li>
+            <li><a href="#science" class="bg-[#36366e]">the science</a></li>
+            <li>
+              <a href="#we-better" class="bg-[#36366e]">why we're better</a>
+            </li>
+            <li>
+              <a href="#testimonials" class="bg-[#36366e]">testimonials</a>
+            </li>
           </ul>
           <!-- mobile menu button -->
           <img
@@ -56,19 +62,37 @@
     </header>
     <!-- hero -->
     <section
-      class="bg-[url('../images/hero-banner.svg')] bg-cover bg-center pt-44 pb-48 lg:pb-72 2xl:pb-64 mb-0 lg:-mb-[29px] xl:-mb-11 relative overflow-hidden"
+      class="bg-[url('../images/sky-no-clouds.svg')] bg-cover bg-center pt-44 pb-48 lg:pb-72 2xl:pb-64 mb-0 lg:-mb-[29px] xl:-mb-11 relative overflow-hidden"
     >
-      <div class="container">
-        <div class="lg:grid grid-cols-[2fr_1fr]">
+      <!-- clouds behind -->
+      <img
+        src="public/images/clouds-behind.svg"
+        alt=""
+        class="absolute bottom-0 left-1/2 -translate-x-1/2 lg:-translate-y-[60%] xl:translate-y-0 w-[106%] max-w-[106%]"
+      />
+      <!-- clouds front -->
+      <img
+        src="public/images/clouds-front.svg"
+        alt=""
+        class="absolute -bottom-4 left-1/2 -translate-x-1/2 translate-y-[40%] lg:translate-y-0 xl:translate-y-[40%] z-10 w-[106%] max-w-[106%]"
+      />
+      <div class="container relative">
+        <!-- phone  -->
+        <img
+          src="public/images/hero-phone.svg"
+          alt="decorative hero banner phone"
+          class="absolute right-0 w-[40%] xl:w-auto hidden lg:block"
+        />
+        <div class="lg:grid grid-cols-[2fr_1fr] gap-10 xl:gap-0">
           <!-- text container -->
           <div class="text-white text-center lg:text-start lg:pl-24">
             <h1
-              class="capitalize font-heading-font font-bold text-4xl sm:text-5xl xl:text-7xl mb-4"
+              class="capitalize font-heading-font font-bold text-4xl sm:text-5xl xl:text-7xl mb-4 w-fit mx-auto lg:mx-0 bg-[#36366e]"
             >
               study faster <br />
               <span class="text-yellow-color">remember long</span>
             </h1>
-            <p class="text-lg xl:text-2xl mb-9 xl:mb-14">
+            <p class="text-lg xl:text-2xl mb-9 xl:mb-14 w-fit bg-[#36366e]">
               Law School Boost makes studying for law school and the Bar easier
               using our science-backed, A.I.-driven, adaptive flashcards with
               integrated hypos, plain English legal translations, and memorable
@@ -94,21 +118,13 @@
               </a>
             </div>
           </div>
-
-          <!-- phone img container -->
-          <div class="relative overflow-hidden hidden lg:block">
-            <img
-              src="public/images/hero-phone.svg"
-              alt="decorative hero banner phone"
-              class="absolute"
-            />
-          </div>
+          <div></div>
         </div>
       </div>
     </section>
 
     <!-- statistics -->
-    <section class="relative">
+    <section class="relative z-20">
       <!-- middle missle -->
       <img
         src="public/images/hero-missle.png"
@@ -752,11 +768,11 @@
         <h2 class="text-white mb-12 text-3xl sm:text-5xl">
           what our students are saying
         </h2>
-        <div class="reviews owl-carousel">
+        <div class="reviews owl-carousel lg:pl-12">
           <!-- box 1 -->
-          <div class="grid grid-rows-[4fr_1fr]">
+          <div class="flex flex-col justify-between h-full">
             <div
-              class="relative bg-white flex items-center px-4 rounded-3xl shadow-[8px_12px_0_0_#6c87b3] mb-10 pt-20 pb-28"
+              class="relative bg-white flex items-center px-4 rounded-3xl shadow-[8px_12px_0_0_#6c87b3] mb-10 pt-20 pb-28 flex-grow"
             >
               <p class="text-xl font-semibold">
                 I have checked out everything on the market, and your approach
@@ -778,9 +794,9 @@
           </div>
 
           <!-- box 2 -->
-          <div class="grid grid-rows-[4fr_1fr]">
+          <div class="flex flex-col justify-between h-full">
             <div
-              class="relative bg-white flex items-center px-4 rounded-3xl shadow-[8px_12px_0_0_#6c87b3] mb-10 pt-20 pb-28"
+              class="relative bg-white flex items-center px-4 rounded-3xl shadow-[8px_12px_0_0_#6c87b3] mb-10 pt-20 pb-28 flex-grow"
             >
               <p class="text-xl font-semibold">
                 I am sitting for the February bar and this app has been very
@@ -804,33 +820,9 @@
           </div>
 
           <!-- box 3 -->
-          <div class="grid grid-rows-[4fr_1fr]">
+          <div class="flex flex-col justify-between h-full">
             <div
-              class="relative bg-white flex items-center px-4 rounded-3xl shadow-[8px_12px_0_0_#6c87b3] mb-10 pt-20 pb-28"
-            >
-              <p class="text-xl font-semibold">
-                The illustrations make things so easy to remember and the
-                plain-language explanations make these concepts much more
-                accessible than the commercial bar prep programs I used!
-              </p>
-              <div
-                class="absolute bottom-0 translate-y-[45%] translate-x-5 border-[30px] border-transparent border-l-white drop-shadow-[-3px_12px_0_#6c87b3] -rotate-45"
-              ></div>
-            </div>
-            <div class="flex items-center gap-2 w-4/5 ml-auto">
-              <img
-                src="public/images/review-yi.svg"
-                alt="user avatar"
-                class="w-16"
-              />
-              <p class="capitalize text-3xl font-bold">yi q.</p>
-            </div>
-          </div>
-
-          <!-- box 3 -->
-          <div class="grid grid-rows-[4fr_1fr]">
-            <div
-              class="relative bg-white flex items-center px-4 rounded-3xl shadow-[8px_12px_0_0_#6c87b3] mb-10 pt-20 pb-28"
+              class="relative bg-white flex items-center px-4 rounded-3xl shadow-[8px_12px_0_0_#6c87b3] mb-10 pt-20 pb-28 flex-grow"
             >
               <p class="text-xl font-semibold">
                 The illustrations make things so easy to remember and the
@@ -852,11 +844,11 @@
           </div>
         </div>
 
-        <div class="reviews-2 owl-carousel">
+        <div class="reviews-2 owl-carousel lg:lg:pr-12">
           <!-- box 1 -->
-          <div class="grid grid-rows-[4fr_1fr]">
+          <div class="flex flex-col justify-between h-full">
             <div
-              class="relative bg-white flex items-center px-4 rounded-3xl shadow-[8px_12px_0_0_#6c87b3] mb-10 pt-20 pb-28"
+              class="relative bg-white flex items-center px-4 rounded-3xl shadow-[8px_12px_0_0_#6c87b3] mb-10 pt-20 pb-28 flex-grow"
             >
               <p class="text-xl font-semibold">
                 This is a great alternative to Critical Pass, or reviews that
@@ -880,9 +872,9 @@
           </div>
 
           <!-- box 2 -->
-          <div class="grid grid-rows-[4fr_1fr]">
+          <div class="flex flex-col justify-between h-full">
             <div
-              class="relative bg-white flex items-center px-4 rounded-3xl shadow-[8px_12px_0_0_#6c87b3] mb-10 pt-20 pb-28"
+              class="relative bg-white flex items-center px-4 rounded-3xl shadow-[8px_12px_0_0_#6c87b3] mb-10 pt-20 pb-28 flex-grow"
             >
               <p class="text-xl font-semibold">
                 This is a must have app for any law student. I started using it
@@ -907,9 +899,9 @@
           </div>
 
           <!-- box 3 -->
-          <div class="grid grid-rows-[4fr_1fr]">
+          <div class="flex flex-col justify-between h-full">
             <div
-              class="relative bg-white flex items-center px-4 rounded-3xl shadow-[8px_12px_0_0_#6c87b3] mb-10 pt-20 pb-28"
+              class="relative bg-white flex items-center px-4 rounded-3xl shadow-[8px_12px_0_0_#6c87b3] mb-10 pt-20 pb-28 flex-grow"
             >
               <p class="text-xl font-semibold">
                 Fantastic Bar Prep App! Awesome visuals! This is a fantastic bar
@@ -1064,10 +1056,10 @@
               <div
                 class="self-end flex flex-col sm:flex-row gap-x-10 gap-y-4 w-2/3 mx-auto"
               >
-                <a href="#" class="mx-auto w-1/2 sm:w-auto">
+                <a href="#" class="mx-auto w-1/4 sm:w-auto">
                   <img src="public/images/app-store.svg" alt="" />
                 </a>
-                <a href="#" class="mx-auto w-1/2 sm:w-auto">
+                <a href="#" class="mx-auto w-1/4 sm:w-auto">
                   <img src="public/images/play-store.svg" alt="" />
                 </a>
               </div>

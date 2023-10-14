@@ -12,6 +12,7 @@ $(document).ready(function () {
   $(".instit-reviews").owlCarousel({
     nav: true,
     autoplay: true,
+    autoplayHoverPause: true,
     autoplayTimeout: 2500,
     margin: 30,
     center: false,
@@ -29,6 +30,7 @@ $(document).ready(function () {
   $(".reviews").owlCarousel({
     nav: false,
     autoplay: true,
+    autoplayHoverPause: true,
     autoplayTimeout: 2500,
     margin: 30,
     center: false,
@@ -42,6 +44,7 @@ $(document).ready(function () {
   $(".reviews-2").owlCarousel({
     nav: false,
     autoplay: true,
+    autoplayHoverPause: true,
     autoplayTimeout: 2100,
     margin: 30,
     center: false,

@@ -33,3 +33,10 @@
 .owl-carousel.reviews-2 .owl-item img {
   @apply w-16;
 }
+
+.owl-carousel.reviews .owl-stage {
+  padding-right: 170px !important;
+}
+.owl-carousel.reviews-2 .owl-stage {
+  padding-left: 170px !important;
+}

@@ -22,6 +22,15 @@ module.exports = {
       gridTemplateColumns: {
         "reponsive-6": "repeat(auto-fit, minmax(200px, 1fr))",
       },
+      keyframes: {
+        hover: {
+          "0%, 100%": { transform: "translateY(6%)" },
+          "50%": { transform: "translateY(-6%)" },
+        },
+      },
+      animation: {
+        hover: "hover 3.2s linear infinite alternate",
+      },
     },
   },
   plugins: [],

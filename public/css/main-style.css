@@ -965,6 +965,34 @@ h2 {
   }
 }
 
+.animate-hover-better-bot-1 {
+  animation: hover 3.5s linear infinite alternate;
+}
+
+@keyframes hover {
+  0%, 100% {
+    transform: translateY(6%);
+  }
+
+  50% {
+    transform: translateY(-6%);
+  }
+}
+
+.animate-hover-better-bot-2 {
+  animation: hover 3.5s 1.2s linear infinite alternate;
+}
+
+@keyframes hover {
+  0%, 100% {
+    transform: translateY(6%);
+  }
+
+  50% {
+    transform: translateY(-6%);
+  }
+}
+
 .animate-hover {
   animation: hover 3.2s linear infinite alternate;
 }

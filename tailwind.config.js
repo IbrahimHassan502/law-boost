@@ -30,6 +30,8 @@ module.exports = {
       },
       animation: {
         hover: "hover 3.2s linear infinite alternate",
+        "hover-better-bot-1": "hover 3.5s linear infinite alternate",
+        "hover-better-bot-2": "hover 3.5s 1.2s linear infinite alternate",
       },
     },
   },

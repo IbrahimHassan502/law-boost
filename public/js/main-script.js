@@ -49,6 +49,7 @@ $(document).ready(function () {
     margin: 30,
     center: false,
     loop: true,
+    startPosition: -1,
     slideBy: -1,
     responsive: {
       0: { items: 1, stagePadding: 0 },

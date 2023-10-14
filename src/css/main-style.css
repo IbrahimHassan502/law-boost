@@ -35,8 +35,8 @@
 }
 
 .owl-carousel.reviews .owl-stage {
-  padding-right: 170px !important;
+  padding-left: 0px !important;
 }
 .owl-carousel.reviews-2 .owl-stage {
-  padding-left: 170px !important;
+  padding-left: 175px !important;
 }

@@ -1,5 +1,5 @@
 "use strict";
-// mobile menu functionality
+// ============ mobile menu functionality ============
 const mobileMenuButton = document.querySelector(".mobile-menu-button");
 const navMenu = document.querySelector(".nav-menu");
 
@@ -7,7 +7,61 @@ mobileMenuButton.addEventListener("click", () => {
   navMenu.classList.toggle("-translate-y-full");
   navMenu.classList.toggle("opacity-0");
 });
-// instution reivews owl carosuel
+// ============ statistics counting functinality ============
+
+// let counters = $(".counter");
+// window.addEventListener("scroll", function () {
+//   $(counters).each(function () {
+//     let oTop = this.offsetTop - window.innerHeight + this.outerHeight;
+//     if (e == 0 && window.scrollY >= oTop) {
+//       $(this)
+//         .prop("Counter", 0)
+//         .animate(
+//           {
+//             Counter: $(this).text(),
+//           },
+//           {
+//             duration: 2000,
+//             easing: "swing",
+//             step: function (now) {
+//               $(this).text(now.toFixed(1));
+//             },
+//           }
+//         );
+//       e = 1;
+//     }
+//   });
+// });
+let e = 0;
+$(window).scroll(function () {
+  let countr = $("#counter");
+  let oTop = $(countr).offset().top - window.innerHeight;
+  if (e == 0 && $(window).scrollTop() >= oTop) {
+    $(".count .counter").each(function () {
+      $(this)
+        .prop("Counter", 0)
+        .animate(
+          {
+            Counter: $(this).text(),
+          },
+          {
+            duration: 2000,
+            easing: "swing",
+            step: function (now) {
+              $(this).text(
+                now
+                  .toFixed(1)
+                  .toString()
+                  .replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+              );
+            },
+          }
+        );
+    });
+    e = 1;
+  }
+});
+// ============ instution reivews owl carosuel ============
 $(document).ready(function () {
   $(".instit-reviews").owlCarousel({
     nav: true,
@@ -25,7 +79,7 @@ $(document).ready(function () {
   });
 });
 
-//reivews owl carosuel
+//============ reivews owl carosuel ============
 $(document).ready(function () {
   $(".reviews").owlCarousel({
     nav: false,
@@ -58,7 +112,7 @@ $(document).ready(function () {
     },
   });
 });
-// ========= faq functionality
+// ============ faq functionality ============
 const faqContainer = document.querySelector(".faq-container");
 faqContainer.addEventListener("click", (e) => {
   const faqBox = e.target.closest(".faq-box");

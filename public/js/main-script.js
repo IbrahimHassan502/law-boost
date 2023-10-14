@@ -8,30 +8,6 @@ mobileMenuButton.addEventListener("click", () => {
   navMenu.classList.toggle("opacity-0");
 });
 // ============ statistics counting functinality ============
-
-// let counters = $(".counter");
-// window.addEventListener("scroll", function () {
-//   $(counters).each(function () {
-//     let oTop = this.offsetTop - window.innerHeight + this.outerHeight;
-//     if (e == 0 && window.scrollY >= oTop) {
-//       $(this)
-//         .prop("Counter", 0)
-//         .animate(
-//           {
-//             Counter: $(this).text(),
-//           },
-//           {
-//             duration: 2000,
-//             easing: "swing",
-//             step: function (now) {
-//               $(this).text(now.toFixed(1));
-//             },
-//           }
-//         );
-//       e = 1;
-//     }
-//   });
-// });
 let e = 0;
 $(window).scroll(function () {
   let countr = $("#counter");
@@ -61,6 +37,22 @@ $(window).scroll(function () {
     e = 1;
   }
 });
+// ============ why-we-are-bette phone animation ============
+const fadeIns = document.querySelectorAll(".fade-in");
+window.addEventListener("scroll", () => {
+  [...fadeIns].forEach((fadeIn) => {
+    const fadeInParentTop = fadeIn
+      .closest(".fade-in-parent")
+      .getBoundingClientRect().top;
+    if (fadeInParentTop <= window.innerHeight * 0.8) {
+      fadeIn.classList.remove("translate-y-full");
+      fadeIn.classList.remove("opacity-0");
+    }
+  });
+  console.log(fadeIns[0].getBoundingClientRect());
+  console.log(window.innerHeight);
+});
+
 // ============ instution reivews owl carosuel ============
 $(document).ready(function () {
   $(".instit-reviews").owlCarousel({
@@ -68,6 +60,7 @@ $(document).ready(function () {
     autoplay: true,
     autoplayHoverPause: true,
     autoplayTimeout: 2500,
+    smartSpeed: 1500,
     margin: 30,
     center: false,
     loop: true,
@@ -86,6 +79,7 @@ $(document).ready(function () {
     autoplay: true,
     autoplayHoverPause: true,
     autoplayTimeout: 2500,
+    smartSpeed: 1500,
     margin: 30,
     center: false,
     loop: true,
@@ -100,6 +94,7 @@ $(document).ready(function () {
     autoplay: true,
     autoplayHoverPause: true,
     autoplayTimeout: 2100,
+    smartSpeed: 1500,
     margin: 30,
     center: false,
     loop: true,

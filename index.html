@@ -62,19 +62,19 @@
     </header>
     <!-- hero -->
     <section
-      class="bg-[url('../images/sky-no-clouds.svg')] bg-cover bg-center pt-44 pb-48 lg:pb-72 2xl:pb-64 mb-0 lg:-mb-[29px] xl:-mb-11 relative overflow-hidden"
+      class="bg-[url('../images/sky-no-clouds.svg')] bg-cover pt-44 pb-48 lg:pb-72 2xl:pb-64 mb-0 lg:-mb-[29px] xl:-mb-11 relative overflow-hidden"
     >
       <!-- clouds behind -->
       <img
         src="public/images/clouds-behind.svg"
         alt=""
-        class="absolute bottom-0 left-1/2 -translate-x-1/2 lg:-translate-y-[60%] xl:translate-y-0 w-[106%] max-w-[106%]"
+        class="absolute bottom-0 left-1/2 -translate-x-1/2 lg:-translate-y-[60%] 2xl:translate-y-0 w-[106%] max-w-[106%]"
       />
       <!-- clouds front -->
       <img
         src="public/images/clouds-front.svg"
         alt=""
-        class="absolute -bottom-4 left-1/2 -translate-x-1/2 translate-y-[40%] lg:translate-y-0 xl:translate-y-[40%] z-10 w-[106%] max-w-[106%]"
+        class="absolute -bottom-4 left-1/2 -translate-x-1/2 translate-y-[40%] lg:translate-y-0 2xl:translate-y-[40%] z-10 w-[106%] max-w-[106%]"
       />
       <div class="container relative">
         <!-- phone  -->
@@ -315,18 +315,18 @@
         >
           <!-- first phone container -->
           <div
-            class="relative self-end lg:self-center flex justify-end w-2/3 sm:w-auto"
+            class="fade-in-parent overflow-hidden relative self-end lg:self-center flex justify-end w-2/3 sm:w-auto"
           >
             <img
               src="public/images/first-mobile.svg"
               alt="phone screen showing a progress bar of the application with a quiz beneath it"
-              class="w-2/3 lg:w-auto"
+              class="fade-in translate-y-full opacity-0 duration-1000 w-2/3 lg:w-auto"
             />
             <!-- hidden from lg and up -->
             <img
               src="public/images/second-mobile.svg"
               alt="phone screen showing a dark theme of the application with colorful progress bars and pie charts of the completed courses"
-              class="absolute top-0 right-0 -translate-x-1/2 w-2/3 lg:hidden"
+              class="fade-in translate-y-full opacity-0 duration-1000 absolute top-0 right-0 -translate-x-1/2 w-2/3 lg:hidden"
             />
           </div>
           <!-- cta container -->
@@ -354,11 +354,13 @@
             </div>
           </div>
           <!-- second phone container -->
-          <img
-            src="public/images/why-us-second-phone.png"
-            alt="phone screen showing a dark theme of the application with colorful progress bars and pie charts of the completed courses"
-            class="hidden lg:inline-block"
-          />
+          <div class="fade-in-parent overflow-hidden">
+            <img
+              src="public/images/second-mobile.svg"
+              alt="phone screen showing a dark theme of the application with colorful progress bars and pie charts of the completed courses"
+              class="fade-in translate-y-full opacity-0 duration-1000 hidden lg:inline-block"
+            />
+          </div>
         </div>
       </div>
       <!-- decorative shadow -->
@@ -522,11 +524,9 @@
           don't take our Word for it — it's science!
         </h2>
         <!-- graph with text -->
-        <div
-          class="grid lg:grid-cols-2 items-center gap-x-16 gap-y-10 w-11/12 mx-auto"
-        >
+        <div class="grid lg:grid-cols-2 gap-x-16 gap-y-10 w-11/12 mx-auto">
           <!-- graph container -->
-          <div>
+          <div class="rounded-3xl overflow-hidden">
             <img
               src="public/images/graph.svg"
               alt="graph shwoing learning and review curve"
@@ -559,7 +559,7 @@
         <div class="instit-reviews owl-carousel">
           <!-- review box 1-->
           <div
-            class="flex flex-col items-center gap-16 bg-dark-grey-color rounded-lg pt-16 pb-36 px-8 h-full"
+            class="flex flex-col items-center gap-16 bg-dark-grey-color rounded-3xl overflow-hidden pt-16 pb-36 px-8 h-full"
           >
             <!-- logo holder -->
             <div class="w-1/2 mx-auto">
@@ -579,7 +579,7 @@
           </div>
           <!-- review box 2-->
           <div
-            class="flex flex-col items-center gap-16 bg-dark-grey-color rounded-lg pt-16 pb-36 px-8 h-full"
+            class="flex flex-col items-center gap-16 bg-dark-grey-color rounded-3xl overflow-hidden pt-16 pb-36 px-8 h-full"
           >
             <!-- logo holder -->
             <div class="mx-auto">
@@ -608,7 +608,7 @@
 
           <!-- review box 3-->
           <div
-            class="flex flex-col items-center gap-16 bg-dark-grey-color rounded-lg pt-16 pb-36 px-8 h-full"
+            class="flex flex-col items-center gap-16 bg-dark-grey-color rounded-3xl overflow-hidden pt-16 pb-36 px-8 h-full"
           >
             <!-- logo holder -->
             <div class="mx-auto">
@@ -633,7 +633,7 @@
 
           <!-- review box 4-->
           <div
-            class="flex flex-col items-center gap-16 bg-dark-grey-color rounded-lg pt-16 pb-36 px-8 h-full"
+            class="flex flex-col items-center gap-16 bg-dark-grey-color rounded-lg overflow-hidden pt-16 pb-36 px-8 h-full"
           >
             <!-- logo holder -->
             <div class="mx-auto">

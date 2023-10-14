@@ -654,6 +654,14 @@ h2 {
   top: 0.25rem;
 }
 
+.right-1\/2 {
+  right: 50%;
+}
+
+.left-1\/2 {
+  left: 50%;
+}
+
 .-z-10 {
   z-index: -10;
 }
@@ -866,6 +874,18 @@ h2 {
   width: 100%;
 }
 
+.w-1 {
+  width: 0.25rem;
+}
+
+.w-28 {
+  width: 7rem;
+}
+
+.w-60 {
+  width: 15rem;
+}
+
 .basis-40 {
   flex-basis: 10rem;
 }
@@ -911,6 +931,11 @@ h2 {
 
 .translate-y-full {
   --tw-translate-y: 100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-1\/2 {
+  --tw-translate-x: 50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1272,8 +1297,8 @@ h2 {
   padding-top: 2rem;
 }
 
-.pt-10 {
-  padding-top: 2.5rem;
+.pb-16 {
+  padding-bottom: 4rem;
 }
 
 .text-center {
@@ -1471,6 +1496,10 @@ h2 {
     width: auto;
   }
 
+  .sm\:w-2\/5 {
+    width: 40%;
+  }
+
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1515,11 +1544,6 @@ h2 {
     line-height: 2.25rem;
   }
 
-  .sm\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-
   .sm\:text-5xl {
     font-size: 3rem;
     line-height: 1;
@@ -1537,6 +1561,10 @@ h2 {
 
   .md\:w-auto {
     width: auto;
+  }
+
+  .md\:w-1\/3 {
+    width: 33.333333%;
   }
 
   .md\:grid-cols-\[1fr_8fr\] {
@@ -1559,6 +1587,10 @@ h2 {
 
   .lg\:right-0 {
     right: 0px;
+  }
+
+  .lg\:right-1\/2 {
+    right: 50%;
   }
 
   .lg\:z-0 {
@@ -1630,6 +1662,11 @@ h2 {
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
+  .lg\:translate-x-1\/2 {
+    --tw-translate-x: 50%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1698,6 +1735,14 @@ h2 {
 
   .lg\:pt-28 {
     padding-top: 7rem;
+  }
+
+  .lg\:pb-36 {
+    padding-bottom: 9rem;
+  }
+
+  .lg\:pb-72 {
+    padding-bottom: 18rem;
   }
 
   .lg\:text-start {
@@ -1791,6 +1836,14 @@ h2 {
     padding-bottom: 11rem;
   }
 
+  .xl\:pb-64 {
+    padding-bottom: 16rem;
+  }
+
+  .xl\:pb-72 {
+    padding-bottom: 18rem;
+  }
+
   .xl\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -1814,5 +1867,11 @@ h2 {
   .xl\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:pb-64 {
+    padding-bottom: 16rem;
   }
 }
